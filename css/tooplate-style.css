@@ -9,7 +9,7 @@ http://www.tooplate.com/view/2098-health
   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
 
   body {
-    background: #ffffff;
+    background:rgb(0, 128, 128);
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
   }
@@ -452,7 +452,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .slider .item-first {
-    background-image: url(../images/slider1.jpg);
+    background-image: url(../images/image1.jpeg);
   }
 
   .slider .item-second {
@@ -460,7 +460,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .slider .item-third {
-    background-image: url(../images/slider3.jpg);
+    background-image: url(../images/carousel23.jpg);
   }
 
 
