@@ -469,8 +469,8 @@ http://www.tooplate.com/view/2098-health
   -----------------------------------------*/
 
   #about {
-    background: url('../images/about-bg.jpg') no-repeat top center;
-    background-size: cover;
+  background: url('../images/aboutbg2.jpg') no-repeat top center;
+  background-size: 100% auto;
     padding-top: 150px;
     padding-bottom: 150px;
   }
@@ -562,7 +562,40 @@ http://www.tooplate.com/view/2098-health
     transform: translateY(0px);
     top: -22em;
   }
+/* ---- Services section: equal-height cards ---- */
+@media (min-width: 768px) {
+  #team .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  /* Bootstrap 3's row clearfix pseudo-elements would become flex items */
+  #team .row:before,
+  #team .row:after {
+    display: none;
+  }
+
+  /* Forces the cards to start on a new line below the "Our Services" heading */
+  #team .clearfix {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  /* Each column stretches to the tallest card in its row */
+  #team [class*="col-"] {
+    display: flex;
+  }
+
+  /* The card fills its column */
+  #team .team-thumb {
+    width: 100%;
+  }
+}
+
+/* ---- Spacing between cards (all screen sizes) ---- */
+#team .team-thumb {
+  margin-bottom: 30px;
+}
 
 
   /*---------------------------------------
